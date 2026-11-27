@@ -31,7 +31,7 @@ p{margin:0 0 1em;max-width:66ch}
 .top{position:sticky;top:0;z-index:20;background:var(--black);color:#fff}
 .top .wrap{display:flex;align-items:center;gap:12px;padding:10px max(5vw,16px);flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;margin-inline-end:auto}
-.brand img{width:62px;height:auto;border-radius:50%;box-shadow:0 0 0 1.5px #fff}
+.brand img{width:64px;height:auto}
 .brand b{font-size:16px;line-height:1.1;font-weight:800}
 .brand small{display:block;font-size:13px;color:#b5b7bc;font-weight:400}
 .menu-btn{background:none;border:1.5px solid #555;color:#fff;border-radius:8px;min-height:44px;padding:0 14px;font:inherit;font-weight:600}
