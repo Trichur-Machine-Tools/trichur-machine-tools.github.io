@@ -98,4 +98,14 @@ if (list) {
 
 const yr = document.getElementById('yr');
 if (yr) yr.textContent = new Date().getFullYear();
+
+/* Google Analytics: count Call and WhatsApp taps */
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="tel:"], a[href*="wa.me/"]');
+  if (!a || typeof gtag !== 'function') return;
+  const card = a.closest('.card');
+  const machine = card ? card.querySelector('h3')?.textContent.trim() : 'General enquiry';
+  const isWa = a.href.includes('wa.me/');
+  gtag('event', isWa ? 'click_whatsapp' : 'click_call', {machine: machine, page: location.pathname, link_text: a.textContent.trim()});
+});
 }
