@@ -2,8 +2,8 @@
    To change contact numbers, edit CONTACT below. To add a product, add a line to PRODUCTS. */
 {
 const CONTACT = {
-  call: '919895807637',      // main number for Call buttons
-  whatsapp: '919895807637'   // number that receives WhatsApp enquiries
+  call: '919446723128',      // main number for Call buttons
+  whatsapp: '919446723128'   // number that receives WhatsApp enquiries
 };
 
 const CATEGORIES = [
